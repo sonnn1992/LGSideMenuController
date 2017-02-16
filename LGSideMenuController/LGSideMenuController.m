@@ -1754,15 +1754,15 @@ rightViewBackgroundImageInitialScale = _rightViewBackgroundImageInitialScale;
     self.rootViewCoverView.frame = rootViewViewFrame;
     self.rootViewCoverView.transform = transform;
 
-    if (self.leftView && self.isLeftViewVisible) {
-        self.rootViewCoverView.alpha = self.rootViewCoverAlphaForLeftView * percentage;
-    }
-    else if (self.rightView && self.isRightViewVisible) {
-        self.rootViewCoverView.alpha = self.rootViewCoverAlphaForRightView * percentage;
-    }
-    else {
-        self.rootViewCoverView.alpha = percentage;
-    }
+//    if (self.leftView && self.isLeftViewVisible) {
+//        self.rootViewCoverView.alpha = self.rootViewCoverAlphaForLeftView * percentage;
+//    }
+//    else if (self.rightView && self.isRightViewVisible) {
+//        self.rootViewCoverView.alpha = self.rootViewCoverAlphaForRightView * percentage;
+//    }
+//    else {
+//        self.rootViewCoverView.alpha = percentage;
+//    }
 }
 
 - (void)leftViewsLayoutValidate {
@@ -1845,9 +1845,9 @@ rightViewBackgroundImageInitialScale = _rightViewBackgroundImageInitialScale;
     // -----
 
     if (self.sideViewsCoverView) {
-        if (self.isLeftViewVisible && !self.isLeftViewAlwaysVisibleForCurrentOrientation && !self.isRightViewAlwaysVisibleForCurrentOrientation) {
-            self.sideViewsCoverView.alpha = self.leftViewCoverAlpha - (self.leftViewCoverAlpha * percentage);
-        }
+//        if (self.isLeftViewVisible && !self.isLeftViewAlwaysVisibleForCurrentOrientation && !self.isRightViewAlwaysVisibleForCurrentOrientation) {
+//            self.sideViewsCoverView.alpha = self.leftViewCoverAlpha - (self.leftViewCoverAlpha * percentage);
+//        }
 
         self.sideViewsCoverView.frame = CGRectMake(0.0, 0.0, frameWidth, frameHeight);
     }
@@ -1936,9 +1936,9 @@ rightViewBackgroundImageInitialScale = _rightViewBackgroundImageInitialScale;
     // -----
 
     if (self.sideViewsCoverView) {
-        if (self.isRightViewVisible && !self.isRightViewAlwaysVisibleForCurrentOrientation && !self.isLeftViewAlwaysVisibleForCurrentOrientation) {
-            self.sideViewsCoverView.alpha = self.rightViewCoverAlpha - (self.rightViewCoverAlpha * percentage);
-        }
+//        if (self.isRightViewVisible && !self.isRightViewAlwaysVisibleForCurrentOrientation && !self.isLeftViewAlwaysVisibleForCurrentOrientation) {
+//            self.sideViewsCoverView.alpha = self.rightViewCoverAlpha - (self.rightViewCoverAlpha * percentage);
+//        }
 
         self.sideViewsCoverView.frame = CGRectMake(0.0, 0.0, frameWidth, frameHeight);
     }
@@ -1970,7 +1970,7 @@ rightViewBackgroundImageInitialScale = _rightViewBackgroundImageInitialScale;
             self.leftViewStyleView.contentView.layer.shadowColor = self.leftViewLayerShadowColor.CGColor;
             self.leftViewStyleView.contentView.layer.shadowRadius = self.leftViewLayerShadowRadius;
             self.leftViewStyleView.effect = self.leftViewBackgroundBlurEffect;
-            self.leftViewStyleView.alpha = self.leftViewBackgroundAlpha;
+            //self.leftViewStyleView.alpha = self.leftViewBackgroundAlpha;
         }
 
         if (self.backgroundColorViewForLeftView) {
@@ -2000,7 +2000,7 @@ rightViewBackgroundImageInitialScale = _rightViewBackgroundImageInitialScale;
             self.rightViewStyleView.contentView.layer.shadowColor = self.rightViewLayerShadowColor.CGColor;
             self.rightViewStyleView.contentView.layer.shadowRadius = self.rightViewLayerShadowRadius;
             self.rightViewStyleView.effect = self.rightViewBackgroundBlurEffect;
-            self.rightViewStyleView.alpha = self.rightViewBackgroundAlpha;
+            //self.rightViewStyleView.alpha = self.rightViewBackgroundAlpha;
         }
 
         if (self.backgroundColorViewForRightView) {

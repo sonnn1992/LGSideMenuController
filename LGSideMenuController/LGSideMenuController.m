@@ -322,9 +322,9 @@ rightViewBackgroundImageInitialScale = _rightViewBackgroundImageInitialScale;
     self.leftViewLayerBorderWidth = 0.0;
     self.rightViewLayerBorderWidth = 0.0;
 
-    self.rootViewLayerShadowColor = [UIColor colorWithWhite:0.0 alpha:0.5];
-    self.leftViewLayerShadowColor = [UIColor colorWithWhite:0.0 alpha:0.5];
-    self.rightViewLayerShadowColor = [UIColor colorWithWhite:0.0 alpha:0.5];
+    self.rootViewLayerShadowColor = [UIColor colorWithWhite:0.0 alpha:0.2];
+    self.leftViewLayerShadowColor = [UIColor colorWithWhite:0.0 alpha:0.2];
+    self.rightViewLayerShadowColor = [UIColor colorWithWhite:0.0 alpha:0.2];
 
     self.rootViewLayerShadowRadius = 5.0;
     self.leftViewLayerShadowRadius = 5.0;
